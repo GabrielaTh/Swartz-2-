@@ -1,0 +1,34 @@
+Salut Coach !
+Ce document décrit les étapes nécessaires pour bien démarrer avec ta nouvelle promo BeCodienne. Détruis-le lorsque tu as terminé sa lecture !
+
+Comment utiliser ce repo ?
+Ce repository constitue ton outil de communication écrite principal avec ta promotion. Tu y mets les briefings de tes exercices et projets. Tiens le donc bien à jour, corrige toute faute qui s'y glisserait. Garde-le bien organisé.
+
+Au fur et à mesure que tu avances dans la matière, vas piocher dans le repo "Syllabus Becodus" le contenu nécessaire (ou crée-le).
+
+A la fin des six mois :
+
+mets dans “syllabus becodus” le contenu pédagogique éventuellement créé et qui mérite d'être réutilisé pour les prochaines promos.
+renomme ton repo en ajoutant "- archived" et laisse le en ligne à l'abandon...
+Étapes pour démarrer ta promo
+Choisis un nom de promo, typiquement celui du local assigné à ta promo, inspiré d'une personnalité célèbre dans l'histoire de la programmation.
+Après l'avoir modifiée (dates, infos de contact), crée une version PDF du Guide de l'apprenant (source), que tu mettras dans ce repo.
+Crée le Google Calendar dédié à ta promotion via le Google Apps de BeCode.
+Crée la team privée de ta promo sur Ryver et y mettre tes apprenants
+Ajoute tes juniors dans la Google Sheets Deformathor
+Oblige tes juniors à :
+se créer et te communiquer leur compte GitHub (que tu rajoutes dans Deformathor)
+modifier leur compte LinkedIn et se mettre comme Junior Web Developer at BeCode.org
+Mets dans le Google Agenda au minimum :
+absences prévues de tes juniors
+événements et activités
+(option) le sujet de la veille
+Forke ce repo-ci et renomme-le selon ce format: {generation_counter}-{classroom_name}-promo. generation_counter est un numéro qui correspond au nombre de cycles de la sélection depuis la première promo en avril 2017.
+Modifie le README de ce nouveau repo avec les infos spécifiques à ta promo (le lien vers l'agenda Google notamment).
+Au fur et à mesure que tu avances dans la matière, tu peux piocher dans le repository de référence pédagogique Syllabus BeCodus. Il contient tout le matériel pédagogique créé par les coachs au fur et à mesure des promotions qui se succèdent à BeCode.
+Suivi de ta promo
+inside.becode.org : Intranet pédagogique
+Gestion des présences (bientôt)
+https://becode.ryver.org pour la communication instantanée.
+Voilà. Happy BeCoding !
+

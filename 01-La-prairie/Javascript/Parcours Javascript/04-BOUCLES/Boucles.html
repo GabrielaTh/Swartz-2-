@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Boucles</h1>
+    <h2>Pair et impair</h2>
+    <script>
+        var increment = 0;
+        while (increment < 20) {
+            increment++;
+            if (increment % 2 == 0) {
+                console.log(increment + ' pair');
+
+            }
+            else {
+                console.log(increment + ' pas pair');
+            }
+        }
+
+    </script>
+
+    <h2>Multiplication Tables</h2>
+    <script>
+        var basemulti = 9;
+        for (i = 1; i <= 10; i++) {
+            resultado = basemulti * i;
+            console.log(resultado);
+        }
+    </script>
+    <h2>Assigner des grades</h2>
+    <script>
+        // var grades = prompt('que est votre score?', "");
+        // while (grades) {
+        //     if (grades < 90) {
+        //         console.log(' Pour ' + grades + ' points vous avez le grade A');
+        //     }
+        //     if else (grades < 80){
+        //         console.log(' Pour ' + grades + ' points vous avez le grade B');
+        //     }
+        //     if else(grades < 70){
+        //         console.log(' Pour ' +grades+ ' points vous avez le grade C');
+        //     }
+        //     if else (grades < 65){
+        //         console.log(' Pour ' +grades+ ' points vous avez le grade D');
+        //     }
+        //     else {
+        //         console.log(' Pour ' +grades+ ' points vous avez le grade F');
+
+        //     }
+        // }
+    </script>
+
+    <h2>Pyramide</h2>
+    <script>
+        var i = '*';
+        for (i = 1; i <= 5; i++) {
+            for (j = 0; j < i; j++) {
+                console.log("*");
+            }
+        }
+    </script>
+</body>
+
+</html>

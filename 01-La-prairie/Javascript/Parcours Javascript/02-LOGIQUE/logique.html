@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Logique</h1>
+    <h2>Langues</h2>
+    <script>
+        var Language = prompt("Do you speak??", "");
+        if (Language == "fr") {
+            alert("Bojour tout le monde");
+        }
+        else if (Language == "en") {
+            alert("Hello World");
+        }
+        else if (Language == "es") {
+            alert("Hola Mundo");
+        }
+    </script>
+
+    <h2>Affichage des scores</h2>
+    <script>
+        function chose() {
+            let score = 100;
+            var resultado = prompt("Introduisez votre score", "");
+
+            if (resultado >= 90) {
+                console.log('Vous avez le rang A');
+
+            }
+            else if (resultado < 91 && resultado > 50) {
+                console.log('Vous avez le rang B');
+
+            }
+            else if (resultado <= 50) {
+                console.log('Vous avez le rang C');
+            }
+        }
+        chose();
+    </script>
+    <button onclick="chose()">Votre Score</button>
+    
+    <h2>Mettre au pluriel</h2>
+    <script>
+        function pluriel() {
+            var fruit = 'pomme';
+            var quantite = prompt('Nm. de pommes?', "");
+            if (quantite == 1) {
+                console.log('Je possede ' + quantite + ' pomme ');
+            }
+            else if (quantite > 1) {
+                console.log('Je possede ' + quantite + ' pommes ');
+            }
+        }
+        pluriel();
+    </script>
+    <button onclick="pluriel()">Nm. de pommes?</button>
+</body>
+
+</html>

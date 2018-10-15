@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2>Minimum et maximum</h2>
+    <script>
+    var min = Math.min( 7, 5, -12, 6, 32, 18, 14, -2);
+      console.log(min);
+    var max = Math.max(-3, 9, 21, 36, 27, 54, 17, 35);
+     console.log(max);
+    var additionFinal = (min - max);
+     console.log("l'addition des deux précédentes variables = " + additionFinal);
+    </script>
+
+    <h2>Aleatoire 1</h2>
+    <script>
+        var floatBateau = 10.4;
+         console.log(floatBateau);
+
+        var couleBateau = Math.floor(floatBateau);
+         console.log('Arrondie vers le bas = ' + couleBateau);
+
+        var voleBateau =  Math.ceil(floatBateau);
+         console.log('Arrondie vers le haut = ' + voleBateau);
+    </script>
+
+    <h2>Aleatoire 2</h2>
+    <script>
+        var ale1 = Math.floor(Math.random()* (100 - 50)) + 50;
+          console.log(ale1);
+
+        var ale2 = Math.floor(Math.random()* 2);
+        console.log(ale2);
+
+        var ale3 = Math.floor(Math.random() * (11 - 0)) + 0;
+         console.log(ale3);
+    </script>
+
+    <h2>Aleatoire 3</h2>
+    <script>
+        var t3 = ["Goro","Johnny Cage", "Kano", "Liu Kang","Raiden","Reptile","Scorpion","Shang Tsung","Sonya", 
+        "Sub-Zero"];
+        var tt = t3[Math.floor(Math.random()* t3.length)];
+        console.log(tt);
+    </script>
+</body>
+
+</html>

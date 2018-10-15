@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Fonctions</h1>
+    <h2>Calculs</h2>
+    <script>
+        //soustractions//
+        var restas = function (a, b) {
+            return a - b;
+        }
+        var resulRestas = restas(3, 2);
+        console.log(resulRestas);
+
+        //Division//
+        var division = function (a, b) {
+            return a / b;
+        }
+        var resulDivi = division(9, 3);
+        console.log(resulDivi);
+
+        //multiplications//
+        var multiplications = function (a, b) {
+            return a * b;
+        }
+        var resulMulti = multiplications(5, 5);
+        console.log(resulMulti);
+
+        //Pourcentage//
+        var valor = 200;
+        var Pourcentage = function (a, b) {
+            return valor / a * b;
+        }
+        var resulPor = Pourcentage(100, 50);
+        console.log(resulPor);
+
+                   //Calcul de vitesse/
+
+        var vitesse = prompt('Entrez la vitesse',"", 'km/h?');
+        var distance = prompt('Entrez la distance?', "");
+        var Calcul = (vitesse/distance)
+        console.log(Calcul, 'km/h')
+    </script>
+</body>
+
+</html>

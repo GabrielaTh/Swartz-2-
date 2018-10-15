@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var motPendu = ["B","o","n","j","o","u","r"];
+        var divine = ["","","","","","",""];
+        var keepPlaying = true;
+        var count = 0; 
+        function guessLetter (){
+            var input = prompt('Entrez un lettre?');
+            
+            for(var i = 0; i < motPendu.length; i++){
+                if(motPendu[i] == input){
+                    divine[i] = input;
+                }
+                
+
+            }
+        }
+        while(keepPlaying == true){
+            console.log(motPendu);
+            console.log(divine);
+            count++;
+            guessLetter();
+            if (JSON.stringify(motPendu) == JSON.stringify(divine)){
+                keepPlaying = false;
+            }
+        }
+        alert(`Vous avez reussi en ${count} coups`)
+        
+    </script>
+</body>
+</html>

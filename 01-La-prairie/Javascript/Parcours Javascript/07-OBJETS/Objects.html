@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h2>PNJ (Personnage non-joueur)</h2>
+    <script>
+        let person1 = new Object()
+        person1.nom = 'krusty',
+            person1.age = 1,
+            person1.tab = ["blanco", "negro", "jodion"]
+        for (let x in person1) {
+            //    console.log(person1[x]);
+        }
+
+        function giveitem() {
+            let numero = Math.floor(Math.random() * 3) + 0;
+            console.log(person1.tab[numero]);
+
+        };
+
+        giveitem();
+    </script>
+
+    <h2>Shop</h2>
+    <script>
+        let venta = [
+            { title: "hache", physic: 3, magic: 5, minLevel: 2, available: true },
+            { title: "epee", physic: 10, magic: 8, minLevel: 5, available: true },
+            { title: "sceptre", physic: 8, magic: 10, minLevel: 11, available: false }
+        ];
+
+        function shop() {
+            for (i = 0; i < venta.length; i++) {
+                console.log(venta[i].title);
+            }
+        }
+
+        function disponible() {
+            for (i = 0; i < venta.length; i++) {
+                if (venta[i].available == true) {
+                    console.log(venta[i].title);
+                }
+            }
+        }
+
+        function level() {
+            for (i = 0; i < venta.length; i++) {
+                if (venta[i].minLevel > 10) {
+                    console.log(venta[i].title);
+                }
+            }
+        }
+        shop();
+        disponible();
+        level();
+    </script>
+
+    <h2>Personnage</h2>
+    <script>
+        let mainCharacter = {
+            name: "Gaby",
+            level: 2,
+            life: 1000,
+
+            //weapon: arma
+
+            weapon: {
+                name: "epee",
+                damage: 200
+            }
+        };
+        attack();
+        //Bonus 
+        let character = {
+            name: "venus",
+            level: 4,
+            life: 2000,
+            weapon: {
+                name: "metralleta",
+                damage: 400
+            },
+
+            receiveDamage: function () {
+
+            },
+
+        };
+
+        function attack() {
+            let attaquefinal = (character.level * character.weapon.damage);
+            let damagePersonnage = (mainCharacter.level * mainCharacter.weapon.damage);
+            console.log('Personnage ' + mainCharacter.name + " attaque avec l'arme " + mainCharacter.weapon.name + ' les dégâts sont ' + damagePersonnage);
+            console.log(mainCharacter.name + 'est attaque pour ' + character.name + " avec l'arme " + character.weapon.damage + ' et lui inflige ' + attaquefinal + ' de degats ' + character.name + ' a maintenant ');
+        }
+
+    </script>
+
+</body>
+
+</html>

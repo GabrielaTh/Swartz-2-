@@ -1,0 +1,36 @@
+.hoverMe {
+display:inline-flex;
+background-color:blue; 
+width:150px; 
+height:150px;
+color:white;
+margin-left: 10%;
+}
+
+#reset{
+background-color:red; 
+width:150px; 
+height:150px;
+margin-top: 20px;
+color: white;
+text-align: center;
+}
+
+#axe-x {
+background-color:yellow; 
+width:200px; 
+height:200px;
+margin-top: 20px;
+color: black;
+text-align: center;
+border: solid 1px;
+}
+
+#axe-y {
+background-color:green; 
+width:200px; 
+height:200px;
+margin-top: 20px;
+color:black;
+text-align: center;
+}

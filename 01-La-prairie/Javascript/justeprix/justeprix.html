@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juste Prix</title>
+</head>
+
+<body>
+    <script>
+        var input;
+        var count = 0;
+        var min = 20;
+        var max = 80;
+
+        function calculo(max, min) {
+            return Math.floor(Math.random() * (max - min + max) + min);
+        }
+
+        let winNumber = calculo(min, max);
+
+        function essai () {
+            count++;
+            input = window.prompt('entrez un chifre');
+            if (input < winNumber) {
+                alert("C'est plus");
+            }
+            else if (input > winNumber) {
+                alert("C'est moins");
+            }
+
+            else{
+                alert("C'est juste tu as trouve en " + count + " coups ");
+            }
+
+        }
+        while(input != winNumber){ // GAME LOOP      
+            essai();
+        }
+        alert("Vous avez gagne");
+    </script>
+</body>
+
+</html>
