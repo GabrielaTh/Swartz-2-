@@ -4,10 +4,10 @@
  * Il peut y avoir plusieur façon de faire.
  */
 var tailleString = function (texte) {
-
+ return texte.length;
 }
 var remplaceECar = function (texte) {
-
+  return remplaceECar[4].replace(' ');
 }
 var concatString = function (texte1, texte2) {
 
@@ -22,7 +22,6 @@ var majusculeString = function (texte) {
 
 }
 var minusculeString = function (texte) {
-
 }
 var SupprEspaceString = function (texte) {
 

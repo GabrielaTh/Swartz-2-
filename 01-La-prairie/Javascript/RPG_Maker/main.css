@@ -1,0 +1,21 @@
+.Player img{
+    width: 160px;
+    height: 200px;
+    float: left;
+    margin-top: 5px;
+}
+
+.Monster img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: -10px;
+}
+
+button{
+    border-radius: 10%;
+    margin:10px 0px 0px 7%;
+    width: 60px;
+    height: 25px;
+    
+}

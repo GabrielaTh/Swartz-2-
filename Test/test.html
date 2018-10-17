@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <title>Test</title>
+</head>
+
+<body>
+    <script>
+        var input = prompt('Entrez un chifre?');
+        var trans = parseInt(input);
+        if (trans > 0 && trans < 1000) {
+            var resul1 = (trans / 1);
+            var resul2 = Math.floor(trans / 10);
+            var result3 = Math.floor(trans / 100);
+            console.log(resul1, 'unites ', + resul2, 'dizaines', + result3, 'centaines ');
+        }
+
+        var uniM = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
+        var entre = ["dix", "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix-sept", "dix-huit", "dix-neuf"];
+        var dizM = ["vingt", "trente", "quarante", "cinquante", "soixante", "soixante-dix", "quatre-vingts", "quatre-vingt-dix"];
+        var cenM = ["cent"];
+
+        var resultUni = (trans / 1);
+        var resultUni1 = (trans % 10);
+        var resulDiz = Math.floor(trans / 10);
+        var resulCen = Math.floor(trans / 100);
+
+        function test(num){
+            let a = num;
+            let b = Math.floor(a / 10);
+            for (i=0; i < dizM.length; i++){
+                if (b == i){
+                    return dizM[i-1];
+                }
+            }
+            
+        }
+
+        if (trans < 10) {
+            console.log(`${uniM[resultUni]} unites, ${uniM[resulDiz]}  dizaines, ${uniM[resulCen]} centaines`);
+        }
+
+        else if (trans >= 10 && trans <= 19) {
+            console.log(`${entre[resultUni1]} unites, ${uniM[resulDiz]} dizaines, ${uniM[resulCen]} centaines`);
+        }
+        
+        else if (trans >= 20 && trans <= 99){
+            console.log(`${test(trans)} unites, ${uniM[resulDiz]} dizaines, ${uniM[resulCen]} centaines`);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
