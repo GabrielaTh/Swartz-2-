@@ -1,17 +1,52 @@
-.Player img{
-    width: 160px;
-    height: 200px;
-    float: left;
-    margin-top: 5px;
+.container{
+    background-color:#D0A5EE;
+    border:solid 2px;
+    text-align: center;
+    border-radius: 5px;
+    height: 850px;
+    margin-top:10px;
 }
 
-.Monster img{
+.column{
+    border: solid 2px;
+    border-radius: 5px;
+}
+
+.col-6 {
+    border: solid 1px;
+}
+
+    
+#avatar img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/* #cucu img{
     width: 200px;
     height: 200px;
     float: right;
-    margin-top: -10px;
+    border: solid 2px red;
 }
 
+.Monster{
+    width: 200px;
+    height: 200px;
+    float:right;
+    margin-top: 50%;
+    border:solid 1px green;
+
+}
+
+.Player{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-top: 50%;
+    border:solid 1px green;
+
+}
 button{
     border-radius: 10%;
     margin:10px 0px 0px 7%;
@@ -19,3 +54,9 @@ button{
     height: 25px;
     
 }
+
+.Weapon{
+    width: 80px;
+    height: 80px;
+    margin: 50% 0px 0px 50%;
+} */ */

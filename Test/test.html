@@ -14,6 +14,9 @@
     <script>
         var input = prompt('Entrez un chifre?');
         var trans = parseInt(input);
+        var array = input.split("");
+
+        // premier partie 
         if (trans > 0 && trans < 1000) {
             var resul1 = (trans / 1);
             var resul2 = Math.floor(trans / 10);
@@ -21,42 +24,66 @@
             console.log(resul1, 'unites ', + resul2, 'dizaines', + result3, 'centaines ');
         }
 
-        var uniM = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"];
-        var entre = ["dix", "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix-sept", "dix-huit", "dix-neuf"];
-        var dizM = ["vingt", "trente", "quarante", "cinquante", "soixante", "soixante-dix", "quatre-vingts", "quatre-vingt-dix"];
+        var uniM = ["zero", "one", "two", "tree", "four", "five", "six", "seven", "eight", "nine"];
+        var entre = ["teen", "eleven", "twelve", "thirteen", "fourteen", "fiveteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+        var dizM = ["", "", "twenty-", "thirty-", "forty-", "fifty-", "sixty-", "seventy-", "eighty-", "ninety-"];
         var cenM = ["cent"];
 
-        var resultUni = (trans / 1);
-        var resultUni1 = (trans % 10);
-        var resulDiz = Math.floor(trans / 10);
-        var resulCen = Math.floor(trans / 100);
 
-        function test(num){
-            let a = num;
-            let b = Math.floor(a / 10);
-            for (i=0; i < dizM.length; i++){
-                if (b == i){
-                    return dizM[i-1];
+        function unidad() {
+            let a = array[0];
+            for (i = 0; i < uniM.length; i++) {
+                if (a == i) {
+                    return a;
                 }
             }
-            
+        };
+
+        function decenas() {
+            let total = "";
+            let c = array[0];
+            for (i = 0; i < dizM.length; i++) {
+                if (c == i) {
+                    total = dizM[i];
+                }
+            }
+
+            let a = array[1];
+            for (i = 0; i < uniM.length; i++) {
+                if (a == i) {
+                    total += uniM[i];
+                }
+            }
+
+            return total;
+
         }
 
-        if (trans < 10) {
-            console.log(`${uniM[resultUni]} unites, ${uniM[resulDiz]}  dizaines, ${uniM[resulCen]} centaines`);
+        function centenas() {
+            let b = array[0];
+            for (i = 0; i < uniM.length; i++) {
+                if (b == i) {
+                    return b;
+                }
+            }
         }
 
-        else if (trans >= 10 && trans <= 19) {
-            console.log(`${entre[resultUni1]} unites, ${uniM[resulDiz]} dizaines, ${uniM[resulCen]} centaines`);
+        function resultotal() {
+
+            if (array.length == 1) {
+                console.log(`${uniM[unidad()]} unites`)
+            };
+
+            if (array.length == 2) {
+                console.log(decenas(), ' decenas');
+            }
+
+            if (array.length == 3) {
+                console.log(centenas(), ' centenas');
+            }
         }
-        
-        else if (trans >= 20 && trans <= 99){
-            console.log(`${test(trans)} unites, ${uniM[resulDiz]} dizaines, ${uniM[resulCen]} centaines`);
 
-        }
-
-
-
+        resultotal();
     </script>
 </body>
 

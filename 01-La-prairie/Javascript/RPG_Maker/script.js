@@ -40,25 +40,25 @@ function test() {
       this.durability = durability;
     }
   }
-  function shop() {
-    for (i = 0; i < venta.length; i++) {
+}
+function shop() {
+  for (i = 0; i < venta.length; i++) {
+    console.log(venta[i].title);
+  }
+}
+
+function disponible() {
+  for (i = 0; i < venta.length; i++) {
+    if (venta[i].available == true) {
       console.log(venta[i].title);
     }
   }
+}
 
-  function disponible() {
-    for (i = 0; i < venta.length; i++) {
-      if (venta[i].available == true) {
-        console.log(venta[i].title);
-      }
-    }
-  }
-
-  function level() {
-    for (i = 0; i < venta.length; i++) {
-      if (venta[i].minLevel > 10) {
-        console.log(venta[i].title);
-      }
+function level() {
+  for (i = 0; i < venta.length; i++) {
+    if (venta[i].minLevel > 10) {
+      console.log(venta[i].title);
     }
   }
 }
