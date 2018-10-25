@@ -20,7 +20,7 @@ var selectElementsStartingWithVowel = function(array) {
     }
     if (resul.charAt() === "e") {
       nom2.push(resul);
-    } 
+    }
     if (resul.charAt() === "i") {
       nom2.push(resul);
     }
@@ -36,13 +36,26 @@ var selectElementsStartingWithVowel = function(array) {
 };
 
 var removeNullElements = function(array) {
-    var a = array;
-    var arrayClean = a.clean('null');
-  return arrayClean;
+  function checkNull(array) {
+    if (array !== null) {
+      return array.toString();
+    }
+  }
+  return array.filter(checkNull);
 };
 
 var removeNullAndFalseElements = function(array) {
-  return "Write your method here";
+  function checkNull2(array) {
+    if (array !== null) {
+      return array.toString();
+    }
+  }
+  function checkFalse(array){
+    if(array !== false){
+      return array.toString();
+    }
+  }
+  return array.filter(checkNull2 ,checkFalse);
 };
 
 var reverseWordsInArray = function(array) {

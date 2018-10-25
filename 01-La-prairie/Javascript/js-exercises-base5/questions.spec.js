@@ -49,7 +49,7 @@ describe('Les chaines de caractères : ', function () {
         expect(result).toEqual('jpg');
     });
     it('Compter le nombre d\'espace dans la chaine', function () {
-        var result = NombreEspaceString('Sire ouvrez on en a gros!');
+        var result = NombreEspaceString('Sire ouvrez on en agros!');
         expect(result).toEqual(5);
     });
     it('Inverser une chaine de caractères', function () {
